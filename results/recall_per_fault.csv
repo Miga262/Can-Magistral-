@@ -1,0 +1,5 @@
+,Taisyklė: skydelio lemputė (≥105 °C),Taisyklės: diagnosto žinios,Logistinė regresija (be istorijos),LSTM (30 min. istorija)
+Aušinimo sistemos degradacija,0.009,0.407,0.046,0.522
+Ventiliatoriaus gedimas,0.024,0.083,0.15,0.171
+Uždegimo praleidimai,0.0,0.269,0.589,0.85
+Užstrigęs atviras termostatas,0.0,0.016,0.115,0.841

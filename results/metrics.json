@@ -1,0 +1,123 @@
+{
+  "minute_level": {
+    "Dažniausia klasė (visada 'sveika')": {
+      "Accuracy": 0.879,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1": 0.0,
+      "ROC_AUC": 0.5,
+      "PR_AUC": NaN
+    },
+    "Taisyklė: skydelio lemputė (≥105 °C)": {
+      "Accuracy": 0.88,
+      "Precision": 0.824,
+      "Recall": 0.008,
+      "F1": 0.016,
+      "ROC_AUC": NaN,
+      "PR_AUC": NaN
+    },
+    "Taisyklės: diagnosto žinios": {
+      "Accuracy": 0.875,
+      "Precision": 0.46,
+      "Recall": 0.198,
+      "F1": 0.276,
+      "ROC_AUC": NaN,
+      "PR_AUC": NaN
+    },
+    "Logistinė regresija (be istorijos)": {
+      "Accuracy": 0.771,
+      "Precision": 0.173,
+      "Recall": 0.235,
+      "F1": 0.199,
+      "ROC_AUC": 0.555,
+      "PR_AUC": 0.235
+    },
+    "LSTM (30 min. istorija)": {
+      "Accuracy": 0.938,
+      "Precision": 0.839,
+      "Recall": 0.605,
+      "F1": 0.703,
+      "ROC_AUC": 0.859,
+      "PR_AUC": 0.719
+    }
+  },
+  "vehicle_level": [
+    {
+      "Metodas": "Taisyklė: skydelio lemputė (≥105 °C)",
+      "Aptikta gedimų": "3/16",
+      "Aptikimo dalis": 0.188,
+      "Vid. perspėjimas, km iki gedimo": 32.8,
+      "Klaidingi aliarmai / 1000 km": 0.0
+    },
+    {
+      "Metodas": "Taisyklės: diagnosto žinios",
+      "Aptikta gedimų": "12/16",
+      "Aptikimo dalis": 0.75,
+      "Vid. perspėjimas, km iki gedimo": 54.2,
+      "Klaidingi aliarmai / 1000 km": 4.14
+    },
+    {
+      "Metodas": "Logistinė regresija (be istorijos)",
+      "Aptikta gedimų": "8/16",
+      "Aptikimo dalis": 0.5,
+      "Vid. perspėjimas, km iki gedimo": 76.2,
+      "Klaidingi aliarmai / 1000 km": 13.2
+    },
+    {
+      "Metodas": "LSTM (30 min. istorija)",
+      "Aptikta gedimų": "15/16",
+      "Aptikimo dalis": 0.938,
+      "Vid. perspėjimas, km iki gedimo": 80.9,
+      "Klaidingi aliarmai / 1000 km": 1.32
+    }
+  ],
+  "recall_per_fault": {
+    "Taisyklė: skydelio lemputė (≥105 °C)": {
+      "Aušinimo sistemos degradacija": 0.009,
+      "Ventiliatoriaus gedimas": 0.024,
+      "Uždegimo praleidimai": 0.0,
+      "Užstrigęs atviras termostatas": 0.0
+    },
+    "Taisyklės: diagnosto žinios": {
+      "Aušinimo sistemos degradacija": 0.407,
+      "Ventiliatoriaus gedimas": 0.083,
+      "Uždegimo praleidimai": 0.269,
+      "Užstrigęs atviras termostatas": 0.016
+    },
+    "Logistinė regresija (be istorijos)": {
+      "Aušinimo sistemos degradacija": 0.046,
+      "Ventiliatoriaus gedimas": 0.15,
+      "Uždegimo praleidimai": 0.589,
+      "Užstrigęs atviras termostatas": 0.115
+    },
+    "LSTM (30 min. istorija)": {
+      "Aušinimo sistemos degradacija": 0.522,
+      "Ventiliatoriaus gedimas": 0.171,
+      "Uždegimo praleidimai": 0.85,
+      "Užstrigęs atviras termostatas": 0.841
+    }
+  },
+  "feature_importance": {
+    "idle_frac": 0.007870963551470359,
+    "rpm_mean": 0.02996188291288197,
+    "rpm_std": 0.03409354660504427,
+    "speed_std": 0.055877835636615414,
+    "trip_minutes": 0.060283472538260496,
+    "speed_mean": 0.09499808313024394,
+    "rpm_idle_std": 0.3711653011354586,
+    "load_mean": 0.4995128744417013,
+    "coolant_mean": 0.5207630668894414,
+    "coolant_max": 0.5532126466964798,
+    "coolant_delta": 0.5746726363596983
+  },
+  "lstm_test_pr_auc": 0.7191977096848284,
+  "thresholds": {
+    "logreg": 0.5333655539797032,
+    "lstm": 0.7847810387611389,
+    "rule_dashboard": 0.5,
+    "rule_expert": 0.5
+  },
+  "lstm_train_seconds": 55.1,
+  "lstm_inference_ms": 0.425,
+  "lstm_params": 32129
+}

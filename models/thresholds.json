@@ -1,0 +1,11 @@
+{
+  "thresholds": {
+    "logreg": 0.5333655539797032,
+    "lstm": 0.7847810387611389,
+    "rule_dashboard": 0.5,
+    "rule_expert": 0.5
+  },
+  "lstm_train_seconds": 55.1,
+  "lstm_inference_ms": 0.425,
+  "lstm_params": 32129
+}

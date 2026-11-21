@@ -1,0 +1,5 @@
+Metodas,Aptikta gedimų,Aptikimo dalis,"Vid. perspėjimas, km iki gedimo",Klaidingi aliarmai / 1000 km
+Taisyklė: skydelio lemputė (≥105 °C),3/16,0.188,32.8,0.0
+Taisyklės: diagnosto žinios,12/16,0.75,54.2,4.14
+Logistinė regresija (be istorijos),8/16,0.5,76.2,13.2
+LSTM (30 min. istorija),15/16,0.938,80.9,1.32

@@ -1,0 +1,6 @@
+fault_type,automobiliai,km,eilutes_1hz
+cooling_degradation,20,9319.0,598429
+fan_failure,20,9244.0,615607
+healthy,60,30721.0,2019440
+misfire,20,10111.0,661325
+thermostat_stuck_open,20,9549.0,615681

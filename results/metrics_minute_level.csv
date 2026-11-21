@@ -1,0 +1,6 @@
+,Accuracy,Precision,Recall,F1,ROC_AUC,PR_AUC
+Dažniausia klasė (visada 'sveika'),0.879,0.0,0.0,0.0,0.5,
+Taisyklė: skydelio lemputė (≥105 °C),0.88,0.824,0.008,0.016,,
+Taisyklės: diagnosto žinios,0.875,0.46,0.198,0.276,,
+Logistinė regresija (be istorijos),0.771,0.173,0.235,0.199,0.555,0.235
+LSTM (30 min. istorija),0.938,0.839,0.605,0.703,0.859,0.719
